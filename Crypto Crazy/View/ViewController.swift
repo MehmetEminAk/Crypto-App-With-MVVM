@@ -51,7 +51,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
     }
     func getData(){
-        let url = URL(string: "https://api.nomics.com/v1/currencies/ticker?key=27b9c979bb92b7f49c2dfa21403d00d0aed23093")
+        let url = URL(string: "https://api.nomics.com/v1/currencies/ticker?key=it must be key here")
         WebService().downloadCurrencys(url: url!) { cryptos in
             if let cryptos = cryptos {
                 self.cryptoListViewModel = CryptoListViewModel(cryptoCurrencyList: cryptos )
